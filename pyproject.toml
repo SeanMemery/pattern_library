@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pattern-library"
+version = "0.1.0"
+description = "Pattern library definition and trace-application helpers"
+requires-python = ">=3.10"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = [
+  "pattern_library",
+  "pattern_library_detectors",
+  "pattern_library_evidence",
+  "pattern_library_paths",
+  "pattern_library_registry",
+  "pattern_library_runtime",
+  "pattern_library_schema",
+  "pattern_library_serializer",
+]
